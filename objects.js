@@ -9,7 +9,9 @@ littleYacht.playHorn();
 
 const biggerYacht = {
   hornSound: "Fog Horn",
-  playHorn: littleYacht.playHorn
+  playHorn: function() {
+    console.log(this.hornSound);
+  }
 };
 
 biggerYacht.playHorn();
